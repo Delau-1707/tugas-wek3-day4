@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  color: #2c3e50;
+  font-family:
+    "Segoe UI",
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+  line-height: 1.7;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #1a252f;
+  border-bottom: 2px solid #e67e22;
+}
+
+header h1 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+#hero-section {
+  width: 100%;
+  height: 100vh;
+  background-image: url("foto.webp");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  position: relative;
+}
+
+#hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(26, 37, 47, 0.65);
+  z-index: 1;
+}
+
+.hero h2,
+.hero p {
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+}
+
+.hero h2 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  letter-spacing: -1px;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.hero p {
+  font-size: 1.8rem;
+  background-color: #e67e22;
+  padding: 8px 30px;
+  border-radius: 50px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 0 8px 20px rgba(230, 126, 34, 0.3);
+}
+
+#keunggulan-section {
+  padding: 120px 24px;
+  text-align: center;
+  background-image: url("https://transparenttextures.com");
+  background-repeat: repeat;
+  background-color: #f5f7fa;
+}
+
+#keunggulan-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a252f;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+#keunggulan-section h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #e67e22;
+  margin: 15px auto 0;
+  border-radius: 2px;
+}
+
+#keunggulan-section p {
+  max-width: 650px;
+  margin: 0 auto 60px;
+  color: #7f8c8d;
+  font-size: 1.15rem;
+}
+
+.keunggulan ul {
+  list-style: none;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.keunggulan li {
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 16px;
+  text-align: left;
+  border-left: 5px solid #1a252f;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.keunggulan li strong {
+  display: block;
+  font-size: 1.3rem;
+  color: #1a252f;
+  margin-bottom: 10px;
+}
+
+.keunggulan li:hover {
+  transform: translateY(-8px);
+  border-left-color: #e67e22;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+#komentar-section {
+  padding: 120px 24px;
+  text-align: center;
+
+  /* SHORTHAND: Menyatukan gradasi linear transparan, url, posisi, ukuran, dan attachment */
+  background:
+    linear-gradient(135deg, rgba(26, 37, 47, 0.95), rgba(44, 62, 80, 0.85)),
+    url("foto.webp") center / cover fixed no-repeat;
+  color: #ffffff;
+}
+
+#komentar-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.testimoni {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 50px 40px;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+.barang img {
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #e67e22;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.nama {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.komentar {
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #dfdfdf;
+  position: relative;
+  max-width: 580px;
+  margin: 0 auto;
+}
